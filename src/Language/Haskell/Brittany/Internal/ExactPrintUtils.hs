@@ -22,7 +22,7 @@ import           Data.Data
 import           Data.HList.HList
 
 import           DynFlags ( getDynFlags )
-import           GHC ( runGhc, GenLocated(L), moduleNameString )
+import           GHC
 import qualified DynFlags      as GHC
 import qualified GHC           as GHC hiding (parseModule)
 import qualified Parser        as GHC
@@ -33,7 +33,6 @@ import qualified Lexer         as GHC
 import qualified StringBuffer  as GHC
 import qualified Outputable    as GHC
 import qualified CmdLineParser as GHC
-import           HsSyn
 import           SrcLoc ( SrcSpan, Located )
 
 
@@ -187,7 +186,7 @@ commentAnnFixTransformGlob ast = do
                        , ExactPrint.annsDP               = assocs'
                        }
       ExactPrint.modifyAnnsT $ \anns -> Map.insert annKey1 ann1' anns
-  
+
 
 
 commentAnnFixTransform :: GHC.ParsedSource -> ExactPrint.Transform ()

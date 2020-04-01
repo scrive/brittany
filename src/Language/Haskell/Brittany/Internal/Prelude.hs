@@ -14,7 +14,7 @@ where
 -- rather project-specific stuff:
 ---------------------------------
 #if MIN_VERSION_ghc(8,4,0) /* ghc-8.4 */
-import HsExtension                    as E ( GhcPs )
+import GHC.Hs.Extension               as E ( GhcPs )
 #endif
 
 import RdrName                        as E ( RdrName )

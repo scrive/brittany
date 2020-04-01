@@ -84,10 +84,10 @@ library {
     -fno-warn-redundant-constraints
   }
   build-depends:
-    { base >=4.9 && <4.13
-    , ghc >=8.0.1 && <8.7
+    { base >=4.9 && <4.16
+    , ghc >=8.0.1 && <8.10
     , ghc-paths >=0.1.0.9 && <0.2
-    , ghc-exactprint >=0.5.8 && <0.6.2
+    , ghc-exactprint >=0.5.8 && <0.6.5
     , transformers >=0.5.2.0 && <0.6
     , containers >=0.5.7.1 && <0.7
     , mtl >=2.2.1 && <2.3
@@ -109,10 +109,10 @@ library {
     , unsafe >=0.0 && <0.1
     , safe >=0.3.9 && <0.4
     , deepseq >=1.4.2.0 && <1.5
-    , semigroups >=0.18.2 && <0.19
+    , semigroups >=0.18.2 && <0.21
     , cmdargs >=0.10.14 && <0.11
     , czipwith >=1.0.1.0 && <1.1
-    , ghc-boot-th >=8.0.1 && <8.7
+    , ghc-boot-th >=8.0.1 && <8.10
     , filepath >=1.4.1.0 && <1.5
     , random >= 1.1 && <1.2
     }

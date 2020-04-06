@@ -1,6 +1,6 @@
 {-# LANGUAGE DataKinds #-}
 
-module Main where
+module Language.Haskell.Brittany.Main (main) where
 
 
 
